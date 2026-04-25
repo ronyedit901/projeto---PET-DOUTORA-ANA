@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocolo Pet Natural | Diagnóstico para Cães Pequenos</title>
+  <meta name="description" content="Faça um diagnóstico rápido do seu cãozinho e conheça o Protocolo Pet Natural: um plano com 100 refeições naturais para cães pequenos saírem da rotina da ração." />
+  <meta name="keywords" content="protocolo pet natural, plano alimentar para cães pequenos, alimentação natural para cachorro, comida natural para shih tzu, quiz saúde pet" />
+  <meta name="author" content="Dra. Ana Lúcia Matos" />
+  <meta property="og:title" content="Protocolo Pet Natural para Cães Pequenos" />
+  <meta property="og:description" content="Descubra o que a rotina alimentar pode estar fazendo com seu cãozinho e veja um plano natural para cães pequenos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/f5f0e8/1a3a2a?text=Protocolo+Pet+Natural" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="theme-color" content="#1a3a2a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --dark: #1a3a2a;
+      --darkest: #0f1a14;
+      --sage: #4a7c59;
+      --light-green: #7ab87a;
+      --cream: #f5f0e8;
+      --cream-2: #fffaf0;
+      --gold: #e8c547;
+      --earth: #8b5e3c;
+      --white: #ffffff;
+      --danger: #b53b2d;
+      --shadow: 0 22px 60px rgba(15, 26, 20, 0.16);
+      --soft-shadow: 0 12px 30px rgba(15, 26, 20, 0.10);
+      --radius-xl: 3rem;
+      --radius-xxl: 5rem;
+      --container: 1120px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--darkest);
+      font-size: 16px;
+      line-height: 1.55;
+      overflow-x: hidden;
+      padding-bottom: 82px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.035;
+      background-image:
+        radial-gradient(circle at 25% 25%, #000 0 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, #000 0 1px, transparent 1px);
+      background-size: 18px 18px, 24px 24px;
+      mix-blend-mode: multiply;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, a.button { min-height: 56px; border: 0; cursor: pointer; font-family: inherit; }
+    .container { width: min(100% - 32px, var(--container)); margin: 0 auto; }
+    section { padding: 72px 0; position: relative; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(232, 197, 71, 0.22);
+      color: var(--dark);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid rgba(26, 58, 42, 0.12);
+    }
+
+    h1, h2, h3 {
+      font-family: "Anton", Impact, sans-serif;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      color: var(--dark);
+    }
+
+    h1 { font-size: clamp(2.7rem, 12vw, 6.6rem); margin-top: 18px; }
+    h2 { font-size: clamp(2.15rem, 9vw, 5rem); margin-bottom: 20px; }
+    h3 { font-size: clamp(1.35rem, 6vw, 2.25rem); }
+
+    .serif { font-family: "DM Serif Display", serif; font-style: italic; font-weight: 400; }
+    .lead { font-size: clamp(1.05rem, 4vw, 1.34rem); color: rgba(15, 26, 20, 0.82); margin: 18px 0 0; }
+    .muted { color: rgba(15, 26, 20, 0.68); }
+    .center { text-align: center; }
+
+    .cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 64px;
+      padding: 18px 24px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--darkest);
+      font-weight: 900;
+      font-size: 1rem;
+      box-shadow: 0 14px 28px rgba(232, 197, 71, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity .25s ease;
+      text-align: center;
+    }
+
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(232, 197, 71, 0.36); }
+    .cta.hidden-delay, .delayed-offer.hidden-delay { opacity: 0; pointer-events: none; max-height: 0; overflow: hidden; margin: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+
+    .quiz-screen {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px 0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(122, 184, 122, 0.36), transparent 28%),
+        radial-gradient(circle at 92% 2%, rgba(232, 197, 71, 0.32), transparent 24%),
+        linear-gradient(180deg, var(--cream-2), var(--cream));
+    }
+
+    .quiz-card {
+      width: min(100% - 28px, 640px);
+      background: rgba(255, 255, 255, .74);
+      border: 1px solid rgba(26, 58, 42, .12);
+      border-radius: 2.6rem;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .quiz-progress {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(26, 58, 42, .12);
+      overflow: hidden;
+      margin: 22px 0;
+    }
+
+    .quiz-progress-bar {
+      height: 100%;
+      width: 20%;
+      background: var(--gold);
+      border-radius: 999px;
+      transition: width .25s ease;
+    }
+
+    .quiz-question {
+      font-family: "Anton", Impact, sans-serif;
+      color: var(--dark);
+      font-size: clamp(2rem, 9vw, 3.4rem);
+      line-height: .98;
+      letter-spacing: -.035em;
+      margin-bottom: 18px;
+    }
+
+    .quiz-helper { color: rgba(15, 26, 20, .72); font-weight: 700; margin-bottom: 18px; }
+    .quiz-options { display: grid; gap: 12px; }
+
+    .quiz-option {
+      width: 100%;
+      min-height: 62px;
+      padding: 16px 18px;
+      border-radius: 1.4rem;
+      background: var(--dark);
+      color: var(--cream);
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: left;
+      box-shadow: var(--soft-shadow);
+      transition: transform .15s ease, background .15s ease;
+    }
+
+    .quiz-option:active { transform: scale(.98); }
+    .quiz-option:hover { background: #24543c; }
+
+    .quiz-loader {
+      display: none;
+      text-align: center;
+      padding: 30px 12px;
+    }
+
+    .spinner {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 7px solid rgba(26, 58, 42, .12);
+      border-top-color: var(--gold);
+      margin: 0 auto 22px;
+      animation: spin 1s linear infinite;
+    }
+
+    .loader-message { font-weight: 900; color: var(--dark); font-size: 1.1rem; }
+    .diagnosis-note { margin-top: 16px; font-size: .88rem; color: rgba(15, 26, 20, .62); }
+
+    .sales-wrapper { display: none; opacity: 0; }
+    .sales-wrapper.visible { display: block; animation: fadeIn .7s ease forwards; }
+
+    .hero {
+      min-height: 100svh;
+      padding: 30px 0 74px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(122, 184, 122, 0.35), transparent 28%),
+        radial-gradient(circle at 92% 2%, rgba(232, 197, 71, 0.30), transparent 24%),
+        linear-gradient(180deg, var(--cream-2), var(--cream));
+    }
+
+    .hero-inner { max-width: 940px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+    .hero-sub { max-width: 820px; font-size: clamp(1.08rem, 4.5vw, 1.55rem); line-height: 1.25; color: var(--dark); margin: 18px auto 0; }
+
+    .urgency-strip {
+      margin: 22px auto 0;
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--darkest);
+      font-weight: 900;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .vsl-box {
+      margin: 28px auto 22px;
+      width: min(100%, 860px);
+      aspect-ratio: 16 / 9;
+      border-radius: 2.2rem;
+      background:
+        radial-gradient(circle at center, rgba(232, 197, 71, 0.18), transparent 42%),
+        linear-gradient(145deg, rgba(15, 26, 20, 0.96), rgba(26, 58, 42, 0.88));
+      border: 1px solid rgba(245, 240, 232, 0.18);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      color: var(--cream);
+    }
+
+    .play-button {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--darkest);
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      font-weight: 900;
+      box-shadow: 0 16px 38px rgba(232, 197, 71, 0.25);
+    }
+
+    .vsl-placeholder { color: rgba(245, 240, 232, .72); font-weight: 900; margin-top: -38px; }
+
+    .hero-bullets {
+      display: grid;
+      gap: 10px;
+      margin: 18px auto 0;
+      max-width: 720px;
+      text-align: left;
+    }
+
+    .hero-bullets span { display: flex; gap: 10px; align-items: flex-start; font-weight: 900; color: rgba(15, 26, 20, 0.82); }
+
+    .pain-list, .solution-grid, .included-grid, .bonus-grid, .testimonial-grid, .compare-grid, .stats-grid, .never-grid, .breed-grid, .risk-grid { display: grid; gap: 16px; margin-top: 28px; }
+    .pain-item, .mini-card, .included-card, .bonus-card, .testimonial, .faq-item, .compare-card, .breed-card, .risk-card, .protocol-card {
+      background: rgba(255, 255, 255, 0.64);
+      border: 1px solid rgba(26, 58, 42, 0.10);
+      border-radius: 2rem;
+      box-shadow: var(--soft-shadow);
+      padding: 24px;
+    }
+
+    .pain-item { padding: 16px 18px; font-weight: 900; display: flex; align-items: center; gap: 12px; }
+    .warning-box { margin-top: 28px; background: var(--gold); color: var(--darkest); border-radius: 2rem; padding: 22px; font-weight: 900; font-size: 1.15rem; box-shadow: var(--soft-shadow); }
+
+    .green-section { background: var(--dark); color: var(--cream); overflow: hidden; }
+    .green-section h2, .green-section h3 { color: var(--cream); }
+    .green-section .lead, .green-section .muted { color: rgba(245, 240, 232, 0.78); }
+    .green-section .risk-card, .green-section .bonus-card { background: rgba(245, 240, 232, 0.08); border-color: rgba(245, 240, 232, 0.14); color: var(--cream); }
+    .green-section .risk-card p, .green-section .bonus-card p { color: rgba(245, 240, 232, 0.76); }
+
+    .bonus-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .bonus-heading .bonus-heading-icon {
+      flex: 0 0 auto;
+      display: inline-grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(232, 197, 71, 0.14);
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1;
+      transform: translateY(2px);
+    }
+
+    .bonus-heading .bonus-heading-text {
+      display: block;
+      min-width: 0;
+    }
+
+    .bonus-intro {
+      max-width: 760px;
+      margin-top: 14px;
+    }
+
+    .mini-card .icon, .included-card .icon, .bonus-card .icon, .risk-card .icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+    .mini-card p, .included-card p, .bonus-card p, .risk-card p, .breed-card p, .protocol-card p { margin-top: 8px; color: rgba(15, 26, 20, 0.70); }
+
+    .breed-card { text-align: center; }
+    .breed-emoji { font-size: 2.2rem; margin-bottom: 12px; }
+    .breed-card.featured { background: var(--gold); transform: rotate(-1deg); }
+
+    .longevity-box { margin-top: 28px; display: grid; gap: 18px; align-items: center; background: rgba(232, 197, 71, 0.16); border: 1px solid rgba(232, 197, 71, 0.28); border-radius: var(--radius-xl); padding: 26px; box-shadow: var(--soft-shadow); }
+    .longevity-number { font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: clamp(4rem, 18vw, 8rem); line-height: .85; }
+
+    .author-card { margin-top: 28px; background: rgba(255,255,255,0.66); border-radius: var(--radius-xxl); padding: 24px; box-shadow: var(--shadow); display: grid; gap: 22px; }
+    .author-photo { width: 100%; aspect-ratio: 1 / 1.1; border-radius: 3.6rem; object-fit: cover; object-position: center top; border: 10px solid var(--cream); box-shadow: var(--soft-shadow); background: var(--sage); }
+    .stat { background: var(--dark); color: var(--cream); border-radius: 2rem; padding: 18px; text-align: center; }
+    .stat strong { display: block; font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: 2.2rem; line-height: 1; }
+
+    .free-badge { display: inline-block; margin-top: 16px; padding: 8px 14px; border-radius: 999px; background: var(--gold); color: var(--darkest); font-weight: 900; }
+    .testimonial { font-weight: 600; }
+    .stars { color: var(--gold); letter-spacing: 1px; margin-bottom: 12px; display: block; }
+    .testimonial cite { display: block; margin-top: 14px; color: var(--sage); font-style: normal; font-weight: 900; }
+
+    .offer-box { margin-top: 28px; padding: 26px; border-radius: var(--radius-xl); background: rgba(245, 240, 232, 0.10); border: 1px solid rgba(245, 240, 232, 0.18); box-shadow: var(--shadow); }
+    .offer-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 14px; padding: 13px 0; border-bottom: 1px solid rgba(245, 240, 232, 0.16); font-weight: 800; }
+    .offer-row span { min-width: 0; overflow-wrap: anywhere; }
+    .offer-row strong { white-space: nowrap; text-align: right; }
+    .offer-total { margin-top: 20px; text-align: center; }
+    .offer-total .small { display: block; color: rgba(245, 240, 232, 0.70); text-decoration: line-through; font-weight: 800; }
+    .offer-total .big { display: block; font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: clamp(4rem, 18vw, 6.2rem); line-height: 1; }
+    .guarantee-card { display: grid; gap: 14px; margin-top: 24px; background: rgba(232, 197, 71, 0.16); border: 1px solid rgba(232, 197, 71, 0.25); padding: 24px; border-radius: 2.4rem; }
+
+    .faq-list { display: grid; gap: 14px; margin-top: 28px; }
+    .faq-item { overflow: hidden; padding: 0; }
+    .faq-question { width: 100%; background: transparent; padding: 20px; min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; color: var(--darkest); font-size: 1rem; font-weight: 900; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .faq-answer p { padding: 0 20px 20px; color: rgba(15, 26, 20, 0.72); }
+    .faq-item.active .faq-answer { max-height: 270px; }
+    .faq-item .plus { font-size: 1.5rem; transition: transform 0.2s ease; }
+    .faq-item.active .plus { transform: rotate(45deg); }
+
+    .never-grid { grid-template-columns: repeat(2, 1fr); }
+    .never-item { background: rgba(181, 59, 45, 0.08); border: 1px solid rgba(181, 59, 45, 0.14); color: var(--danger); font-weight: 900; padding: 14px; border-radius: 1.4rem; text-align: center; }
+
+    .legal { background: #10251a; color: rgba(245, 240, 232, 0.82); padding-bottom: 120px; }
+    .legal h2 { color: var(--cream); }
+    .legal-card { background: rgba(245, 240, 232, 0.08); border: 1px solid rgba(245, 240, 232, 0.12); padding: 24px; border-radius: 2.2rem; margin-top: 24px; }
+    .legal-card ul { margin: 18px 0 0 20px; }
+    .legal-card li { margin-bottom: 10px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .footer-links a { color: var(--gold); font-weight: 900; text-decoration: underline; text-underline-offset: 4px; }
+
+    .sticky-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000; background: #e8c547; box-shadow: 0 -12px 30px rgba(15, 26, 20, 0.18); padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); transition: transform 0.25s ease, opacity .25s ease; transform: translateY(120%); }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar.hidden { transform: translateY(120%); }
+    .sticky-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; max-width: var(--container); margin: 0 auto; }
+    .sticky-text { min-width: 0; font-weight: 900; color: var(--darkest); line-height: 1.12; font-size: clamp(0.86rem, 3.5vw, 1rem); overflow-wrap: anywhere; }
+    .sticky-button { min-height: 54px; padding: 0 18px; border-radius: 999px; background: var(--darkest); color: var(--cream); font-weight: 900; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-size: clamp(0.86rem, 3.6vw, 1rem); min-width: 170px; }
+
+    @media (max-width: 390px) {
+      .sticky-inner { gap: 8px; }
+      .sticky-button { min-width: 154px; padding: 0 14px; font-size: 0.86rem; }
+      .sticky-text { font-size: 0.84rem; }
+    }
+
+    .cookie-banner { position: fixed; left: 14px; right: 14px; bottom: 92px; z-index: 9500; background: var(--cream-2); border: 1px solid rgba(26, 58, 42, 0.14); border-radius: 1.6rem; box-shadow: var(--shadow); padding: 18px; display: none; }
+    .cookie-banner.show { display: block; }
+    .cookie-actions { display: grid; gap: 10px; margin-top: 14px; }
+    .cookie-actions button { border-radius: 999px; padding: 12px 16px; font-weight: 900; min-height: 48px; }
+    .accept-cookies { background: var(--dark); color: var(--cream); }
+    .manage-cookies { background: rgba(26, 58, 42, 0.08); color: var(--dark); }
+    .cookie-preferences { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(26, 58, 42, 0.10); }
+    .cookie-preferences.show { display: grid; gap: 10px; }
+    .cookie-toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-weight: 800; }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    @media (min-width: 760px) {
+      body { padding-bottom: 0; }
+      section { padding: 104px 0; }
+      .hero { padding-top: 54px; }
+      .cta { width: auto; min-width: 310px; }
+      .hero-bullets { grid-template-columns: repeat(3, 1fr); }
+      .pain-list { grid-template-columns: repeat(3, 1fr); }
+      .solution-grid, .testimonial-grid, .compare-grid, .stats-grid, .risk-grid { grid-template-columns: repeat(3, 1fr); }
+      .included-grid { grid-template-columns: repeat(4, 1fr); }
+      .bonus-grid, .compare-grid { grid-template-columns: repeat(2, 1fr); }
+      .breed-grid { grid-template-columns: repeat(5, 1fr); }
+      .author-card { grid-template-columns: 360px 1fr; align-items: center; padding: 34px; }
+      .longevity-box { grid-template-columns: 240px 1fr; }
+      .never-grid { grid-template-columns: repeat(4, 1fr); }
+      .sticky-bar { display: none; }
+      .cookie-banner { left: auto; right: 24px; bottom: 24px; max-width: 460px; }
+      .cookie-actions { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <section class="quiz-screen" id="quizScreen">
+    <div class="quiz-card" id="quizCard">
+      <span class="eyebrow">🐾 Diagnóstico rápido do seu cãozinho</span>
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgress"></div></div>
+      <div id="quizContent">
+        <div class="quiz-question" id="quizQuestion"></div>
+        <p class="quiz-helper" id="quizHelper"></p>
+        <div class="quiz-options" id="quizOptions"></div>
+      </div>
+      <div class="quiz-loader" id="quizLoader">
+        <div class="spinner"></div>
+        <div class="loader-message" id="loaderMessage">Analisando perfil biológico...</div>
+        <p class="diagnosis-note">Análise educativa baseada nas suas respostas. Não substitui avaliação veterinária.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sales-wrapper" id="salesWrapper">
+    <header class="hero" id="topo">
+      <div class="container hero-inner reveal">
+        <span class="eyebrow" id="personalBadge">🐾 Resultado personalizado para cães pequenos</span>
+        <h1 id="mainHeadline">A RAÇÃO DE HOJE PODE VIRAR O PROBLEMA DE AMANHÃ</h1>
+        <p class="hero-sub serif" id="mainSubheadline">Antes de comprar mais um pacote de ração, veja por que a rotina alimentar do seu cãozinho pode estar por trás dos sinais que ele mostra todos os dias.</p>
+        <div class="vsl-box" id="vslBox">
+          <div>
+            <div class="play-button">▶</div>
+            <p class="vsl-placeholder">Cole aqui sua VSL de 5 minutos</p>
+          </div>
+        </div>
+
+        <div class="hero-bullets">
+          <span>✅ Plano para cães pequenos de até 10kg</span>
+          <span>✅ Sem sal e sem temperos humanos</span>
+          <span>✅ Acesso imediato + garantia de 30 dias</span>
+        </div>
+
+        <div style="margin-top:26px;" class="delayed-offer hidden-delay">
+          <a class="cta" href="https://pay.kiwify.com.br/CRuhaQo">QUERO CONHECER O PROTOCOLO</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="racas">
+        <div class="container reveal center">
+          <h2 id="breedHeadline">FEITO PARA CÃES PEQUENOS COMO O SEU</h2>
+          <p class="lead" id="breedCopy">Um plano prático para cães de pequeno porte de até 10kg, com preparo simples, ingredientes acessíveis e orientações para uma rotina alimentar mais natural.</p>
+          <div class="breed-grid">
+            <div class="breed-card featured"><div class="breed-emoji">🐶</div><h3>Shih Tzu</h3><p>Ideal para tutoras que querem variar a alimentação sem complicar a rotina.</p></div>
+            <div class="breed-card"><div class="breed-emoji">🐾</div><h3>Yorkshire</h3><p>Receitas simples para cães pequenos, sensíveis e seletivos com comida.</p></div>
+            <div class="breed-card"><div class="breed-emoji">🤍</div><h3>Maltês</h3><p>Opções naturais para trazer mais variedade e cuidado na rotina.</p></div>
+            <div class="breed-card"><div class="breed-emoji">✨</div><h3>Spitz</h3><p>Refeições pensadas para cães pequenos que precisam de equilíbrio e energia.</p></div>
+            <div class="breed-card"><div class="breed-emoji">⚡</div><h3>Pinscher</h3><p>Alternativas práticas para cães pequenos com muita personalidade.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dor">
+        <div class="container reveal">
+          <h2>SEU CACHORRINHO TEM ALGUM DESSES SINAIS?</h2>
+          <p class="lead">Muita tutora acha que isso é “normal da raça”. Mas, em muitos casos, o corpo do pet está dando sinais de que a rotina alimentar não está fazendo bem.</p>
+          <div class="pain-list">
+            <div class="pain-item">❌ Coceira constante</div>
+            <div class="pain-item">❌ Queda de pelo</div>
+            <div class="pain-item">❌ Mau hálito</div>
+            <div class="pain-item">❌ Lágrima ácida</div>
+            <div class="pain-item">❌ Intestino desregulado</div>
+            <div class="pain-item">❌ Falta de apetite</div>
+            <div class="pain-item">❌ Pouca disposição</div>
+            <div class="pain-item">❌ Enjoo da ração</div>
+            <div class="pain-item">❌ Fezes com cheiro forte</div>
+          </div>
+          <div class="warning-box">A culpa pode não ser do seu cãozinho. Pode ser da alimentação que ele recebe todos os dias.</div>
+          <p class="muted" style="margin-top:16px;">Esses sinais também podem ter outras causas. Sempre consulte um veterinário em caso de sintomas persistentes.</p>
+        </div>
+      </section>
+
+      <section class="green-section" id="inimigo">
+        <div class="container reveal">
+          <h2>O INIMIGO NÃO É O SEU PET. É A ROTINA ULTRAPROCESSADA.</h2>
+          <p class="lead">A indústria sabe que o dono quer praticidade. Por isso, vende um alimento seco, cheiroso, colorido e feito para durar meses na prateleira. Mas o corpinho de um cão pequeno pode sentir rápido quando a rotina alimentar não combina com ele.</p>
+          <div class="risk-grid">
+            <div class="risk-card"><span class="icon">🏭</span><h3>Feito para durar</h3><p>Nem tudo que é prático para a prateleira é ideal como única rotina todos os dias.</p></div>
+            <div class="risk-card"><span class="icon">🎨</span><h3>Bonito para o dono</h3><p>Grãos coloridos conversam mais com o olho humano do que com a necessidade do pet.</p></div>
+            <div class="risk-card"><span class="icon">🐾</span><h3>Sinais no corpo</h3><p>Coceira, queda de pelo, mau hálito e intestino irregular podem ser alertas para investigar.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="perda">
+        <div class="container reveal">
+          <h2>O QUE VOCÊ PODE ESTAR PERDENDO SEM PERCEBER</h2>
+          <p class="lead">Quando o pet come mal por meses ou anos, o prejuízo aparece aos poucos: menos energia, mais coceira, mais remédio, mais gasto e menos qualidade de vida.</p>
+          <div class="risk-grid">
+            <div class="risk-card"><span class="icon">💸</span><h3>Mais gastos depois</h3><p>Consulta, remédio, pomada, ração especial e exames costumam pesar muito mais que prevenção.</p></div>
+            <div class="risk-card"><span class="icon">😔</span><h3>Sofrimento silencioso</h3><p>Ele não sabe explicar. Ele só coça, recusa comida, fica quieto ou perde brilho.</p></div>
+            <div class="risk-card"><span class="icon">⏳</span><h3>Menos tempo de qualidade</h3><p>O objetivo não é só viver mais. É viver melhor, com mais disposição e menos desconforto.</p></div>
+          </div>
+          <div class="longevity-box">
+            <div class="longevity-number">+1,8</div>
+            <div>
+              <h3>Anos de vida importam. Qualidade de vida também.</h3>
+              <p class="lead">Pesquisas sobre nutrição, peso saudável e longevidade em cães indicam que uma rotina alimentar controlada pode estar associada a mais tempo de vida e atraso de sinais crônicos. Não é promessa de cura nem garantia de anos extras — é um motivo sério para tratar alimentação como prioridade.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solucao">
+        <div class="container reveal">
+          <h2>A ALIMENTAÇÃO NATURAL FAZ O CAMINHO CONTRÁRIO</h2>
+          <p class="lead">Em vez de só “encher a barriga”, ela entrega comida de verdade, com ingredientes simples, preparo fácil e benefícios reais para a rotina do seu cãozinho.</p>
+          <div class="solution-grid">
+            <div class="mini-card"><span class="icon">🍽️</span><h3>Come com mais vontade</h3><p>Refeições simples, cheirosas e adaptadas para cães pequenos.</p></div>
+            <div class="mini-card"><span class="icon">✨</span><h3>Pelo mais bonito</h3><p>Ingredientes naturais que ajudam o corpo a funcionar melhor.</p></div>
+            <div class="mini-card"><span class="icon">💚</span><h3>Intestino mais regulado</h3><p>Opções pensadas para uma alimentação mais equilibrada.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="metodo">
+        <div class="container reveal">
+          <h2>O MÉTODO DAS 3 REFEIÇÕES SEGURAS</h2>
+          <p class="lead">O Protocolo Pet Natural transforma receitas soltas em um plano simples para você saber o que preparar, como preparar e como servir sem inventar nada.</p>
+          <div class="solution-grid">
+            <div class="protocol-card"><h3>1. Ingredientes simples</h3><p>Itens acessíveis de mercado, sem sal, sem açúcar e sem temperos humanos.</p></div>
+            <div class="protocol-card"><h3>2. Preparo guiado</h3><p>Modo de preparo direto para você não ficar perdida na cozinha.</p></div>
+            <div class="protocol-card"><h3>3. Porção para pequenos</h3><p>Orientações pensadas para cães de pequeno porte de até 10kg.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="autora">
+        <div class="container reveal">
+          <h2>QUEM É A DRA. ANA LÚCIA MATOS</h2>
+          <div class="author-card">
+            <img class="author-photo" src="data:image/jpeg;base64,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" alt="Dra. Ana Lúcia Matos, veterinária especialista em nutrição natural, segurando um cão pequeno no colo em clínica veterinária" loading="lazy" />
+            <div>
+              <p class="lead">A Dra. Ana Lúcia Matos é veterinária especialista em nutrição natural há 12 anos. Ao longo da sua trajetória, já orientou mais de 15.000 tutoras a melhorarem a rotina alimentar dos seus pets com comida de verdade, de forma simples, prática e responsável.</p>
+              <div class="stats-grid">
+                <div class="stat"><strong>12</strong>anos de experiência</div>
+                <div class="stat"><strong>15.000+</strong>tutoras orientadas</div>
+                <div class="stat"><strong>100</strong>refeições naturais</div>
+              </div>
+              <div class="guarantee-card"><h3>Autoridade com carinho de mãe de pet</h3><p>Conteúdo educativo criado para ajudar tutoras de cães pequenos a oferecerem refeições mais naturais, saborosas e adequadas à rotina do pet.</p></div>
+              <p class="muted" style="margin-top:16px;">As informações do protocolo são educativas e não substituem avaliação veterinária individual.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="incluido">
+        <div class="container reveal">
+          <h2>O QUE VEM DENTRO DO PROTOCOLO</h2>
+          <div class="included-grid">
+            <div class="included-card"><span class="icon">☀️</span><h3>Café da manhã</h3><p>20 opções naturais para começar o dia com energia.</p></div>
+            <div class="included-card"><span class="icon">🍽️</span><h3>Almoço e jantar</h3><p>40 refeições completas para variar a rotina do pet.</p></div>
+            <div class="included-card"><span class="icon">🐾</span><h3>Petiscos e snacks</h3><p>25 opções naturais para agradar sem culpa.</p></div>
+            <div class="included-card"><span class="icon">💊</span><h3>Rotinas especiais</h3><p>15 opções pensadas para necessidades comuns da rotina.</p></div>
+          </div>
+          <p class="lead">Cada preparo vem com ingredientes, modo de preparo, benefício principal e porção indicada para cães de pequeno porte.</p>
+        </div>
+      </section>
+
+      <section class="green-section" id="bonus">
+        <div class="container reveal">
+          <h2 class="bonus-heading"><span class="bonus-heading-icon">🎁</span><span class="bonus-heading-text">BÔNUS EXCLUSIVOS — GRÁTIS HOJE</span></h2>
+          <p class="lead bonus-intro">Você não recebe só uma lista de preparos. Recebe um plano simples para começar sem se perder.</p>
+          <div class="bonus-grid">
+            <div class="bonus-card"><span class="icon">📅</span><h3>Calendário Alimentar de 7 Dias</h3><p>Um cardápio completo da semana para você imprimir e seguir sem pensar.</p><span class="free-badge">R$ 17,00 • GRÁTIS</span></div>
+            <div class="bonus-card"><span class="icon">🛒</span><h3>Lista de Compras Natural</h3><p>O que comprar no mercado para preparar 30 dias de alimentação natural.</p><span class="free-badge">R$ 12,00 • GRÁTIS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparacao">
+        <div class="container reveal">
+          <h2>O PREÇO DE COMEÇAR HOJE É PEQUENO. O DE ADIAR PODE SAIR CARO.</h2>
+          <div class="compare-grid">
+            <div class="compare-card"><h3>Consulta veterinária</h3><p class="lead">R$ 150 a R$ 300</p></div>
+            <div class="compare-card"><h3>Remédios e pomadas</h3><p class="lead">R$ 80 a R$ 200</p></div>
+            <div class="compare-card"><h3>Rações especiais</h3><p class="lead">R$ 100 a R$ 300/mês</p></div>
+            <div class="compare-card" style="background: var(--gold);"><h3>Protocolo completo</h3><p class="lead"><strong>R$ 27,00 pagamento único</strong></p></div>
+          </div>
+          <p class="lead">Por menos do que uma ida ao pet shop, você recebe um plano organizado para começar a preparar refeições naturais e melhorar a rotina do seu cãozinho todos os dias.</p>
+        </div>
+      </section>
+
+      <section id="depoimentos-oferta">
+        <div class="container reveal">
+          <h2>QUEM COMEÇOU, SENTIU A DIFERENÇA</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial"><span class="stars">★★★★★</span><p>“Meu Shih Tzu começou a comer com vontade na primeira semana! A coceira passou em 15 dias.”</p><cite>— Camila R., tutora do Max</cite></article>
+            <article class="testimonial"><span class="stars">★★★★★</span><p>“Minha Yorkshire estava com pelo horrível. Depois de 1 mês ficou irreconhecível!”</p><cite>— Patricia M., tutora da Luna</cite></article>
+            <article class="testimonial"><span class="stars">★★★★★</span><p>“Ingredientes que tenho em casa e meu Maltês ama cada receita!”</p><cite>— Sandra L., tutora do Bolt</cite></article>
+          </div>
+          <p class="muted" style="margin-top:16px;">Resultados podem variar de acordo com a rotina, condição individual do pet e acompanhamento veterinário.</p>
+        </div>
+      </section>
+
+      <section class="green-section delayed-offer hidden-delay" id="oferta">
+        <div class="container reveal">
+          <h2 id="offerHeadline">NÃO ESPERE SEU CÃOZINHO PIORAR PARA COMEÇAR A CUIDAR DA COMIDA DELE</h2>
+          <p class="lead" id="offerCopy">Hoje você leva o Protocolo Pet Natural completo, os bônus e um caminho simples para começar a alimentação natural com mais segurança.</p>
+          <div class="offer-box">
+            <div class="offer-row"><span>✅ Protocolo Pet Natural — 100 Refeições</span><strong>R$ 47,00</strong></div>
+            <div class="offer-row"><span>🎁 Calendário Alimentar de 7 Dias</span><strong>R$ 17,00</strong></div>
+            <div class="offer-row"><span>🎁 Lista de Compras Natural</span><strong>R$ 12,00</strong></div>
+            <div class="offer-total"><span class="small">Total: R$ 76,00</span><span>Hoje por apenas</span><span class="big">R$ 27,00</span></div>
+            <div style="margin-top:24px; text-align:center;"><a class="cta" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Comprar agora por R$ 27,00">SIM! QUERO COMEÇAR — R$ 27,00</a></div>
+          </div>
+          <div class="guarantee-card"><h3>🛡️ Garantia incondicional de 30 dias</h3><p>Se você não gostar do conteúdo, devolvemos 100% do seu dinheiro. O risco fica comigo. A chance de cuidar melhor do seu pet fica com você.</p></div>
+        </div>
+      </section>
+
+      <section id="garantia">
+        <div class="container reveal">
+          <h2>VOCÊ TESTA SEM RISCO POR 30 DIAS</h2>
+          <p class="lead">Se o protocolo não for para você, basta solicitar o reembolso dentro do prazo de garantia. Sem burocracia. Sem letras miúdas. Sem perguntas desconfortáveis.</p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container reveal">
+          <h2>DÚVIDAS FREQUENTES</h2>
+          <div class="faq-list">
+            <div class="faq-item active"><button class="faq-question" aria-expanded="true">Preciso ser veterinária para seguir o protocolo? <span class="plus">+</span></button><div class="faq-answer"><p>Não. O plano foi pensado para tutoras comuns, com ingredientes simples de mercado e passo a passo fácil.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Funciona para qualquer raça pequena? <span class="plus">+</span></button><div class="faq-answer"><p>Sim. O conteúdo é indicado para cães de pequeno porte de até 10kg, como Shih Tzu, Yorkshire, Maltês, Spitz, Pinscher e raças semelhantes.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Como recebo o acesso? <span class="plus">+</span></button><div class="faq-answer"><p>Você recebe o acesso imediatamente após a confirmação do pagamento, direto no seu e-mail.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">E se eu não gostar? <span class="plus">+</span></button><div class="faq-answer"><p>Você tem 30 dias de garantia. Se não gostar, pode solicitar reembolso total.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Posso substituir a ração completamente? <span class="plus">+</span></button><div class="faq-answer"><p>A transição deve ser gradual. Recomendamos acompanhamento veterinário, principalmente se o pet tiver doenças, alergias ou necessidades específicas.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Posso usar tempero humano? <span class="plus">+</span></button><div class="faq-answer"><p>Não. As refeições não devem receber sal, açúcar, óleo em excesso, temperos prontos, cebola, alho ou qualquer ingrediente tóxico para cães.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seguranca-alimentar">
+        <div class="container reveal">
+          <h2>ATENÇÃO: O QUE NUNCA COLOCAR NA COMIDA DO SEU CÃO</h2>
+          <p class="lead">Cães não devem comer como humanos. Alguns alimentos comuns na nossa cozinha podem ser perigosos para eles.</p>
+          <div class="never-grid">
+            <div class="never-item">❌ Sal</div><div class="never-item">❌ Açúcar</div><div class="never-item">❌ Chocolate</div><div class="never-item">❌ Cebola</div><div class="never-item">❌ Alho</div><div class="never-item">❌ Uva</div><div class="never-item">❌ Uva-passa</div><div class="never-item">❌ Álcool</div><div class="never-item">❌ Café</div><div class="never-item">❌ Ossos cozidos</div><div class="never-item">❌ Temperos prontos</div><div class="never-item">❌ Frituras</div><div class="never-item">❌ Doces</div><div class="never-item">❌ Xilitol</div><div class="never-item">❌ Embutidos</div><div class="never-item">❌ Gordura excessiva</div>
+          </div>
+          <p class="lead">O protocolo orienta refeições próprias para cães, sem temperos humanos e sem ingredientes perigosos.</p>
+        </div>
+      </section>
+
+      <section class="green-section delayed-offer hidden-delay" id="checkout">
+        <div class="container reveal center">
+          <h2>SEU CACHORRINHO NÃO PRECISA COMER SEMPRE A MESMA COISA</h2>
+          <p class="lead">Com o Protocolo Pet Natural da Dra. Ana Lúcia, você tem um caminho simples para oferecer mais variedade, mais cuidado e mais amor em cada refeição.</p>
+          <div style="margin-top:28px;"><a class="cta" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Ir para o checkout e comprar por R$ 27,00">QUERO COMEÇAR HOJE POR R$ 27,00</a></div>
+        </div>
+      </section>
+
+      <section class="legal" id="privacidade">
+        <div class="container reveal">
+          <h2>PRIVACIDADE, SEGURANÇA E TRANSPARÊNCIA</h2>
+          <div class="legal-card">
+            <p>Ao comprar este produto, seus dados pessoais serão utilizados apenas para processar o pagamento, liberar o acesso ao protocolo, enviar comunicações relacionadas à compra e oferecer suporte ao cliente.</p>
+            <ul>
+              <li>Os dados são tratados de acordo com a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018.</li>
+              <li>A página pode utilizar cookies, pixels de rastreamento e ferramentas de análise para melhorar a experiência do usuário e medir campanhas de marketing.</li>
+              <li>Você pode solicitar informações, correção ou exclusão dos seus dados pelos canais de atendimento informados.</li>
+              <li>Seus dados não serão vendidos a terceiros.</li>
+              <li>Dados de pagamento são processados por plataforma segura de checkout.</li>
+            </ul>
+            <div class="footer-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a><a href="#">Política de Reembolso</a><a href="#">Contato/Suporte</a></div>
+          </div>
+          <div class="legal-card"><p><strong>Aviso responsável:</strong> Este material possui finalidade educativa e não substitui consulta com médico-veterinário. Em caso de doenças, alergias, sintomas persistentes, filhotes, idosos, gestantes ou cães com condições especiais, procure orientação profissional antes de alterar a alimentação do pet. Não prometemos cura, tratamento ou aumento garantido de expectativa de vida.</p></div>
+          <p style="margin-top:24px;">© 2026 Protocolo Pet Natural. Todos os direitos reservados.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="sticky-bar hidden-delay hidden" id="stickyBar" aria-label="Barra fixa de compra"><div class="sticky-inner"><div class="sticky-text">Protocolo Pet • R$ 27,00</div><a class="sticky-button" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Comprar agora">COMPRAR AGORA →</a></div></div>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <p><strong>Usamos cookies</strong> para melhorar sua experiência, medir acessos e personalizar anúncios. Ao continuar, você concorda com nossa Política de Privacidade.</p>
+    <div class="cookie-actions"><button class="accept-cookies" id="acceptCookies">Aceitar</button><button class="manage-cookies" id="manageCookies">Gerenciar preferências</button></div>
+    <div class="cookie-preferences" id="cookiePreferences"><label class="cookie-toggle">Essenciais <input type="checkbox" checked disabled /></label><label class="cookie-toggle">Analíticos <input type="checkbox" id="analyticsCookies" /></label><label class="cookie-toggle">Marketing <input type="checkbox" id="marketingCookies" /></label><button class="accept-cookies" id="saveCookies">Salvar preferências</button></div>
+  </div>
+
+  <script>
+    const quizSteps = [
+      { key: 'breed', question: 'Qual é a raça do seu cãozinho?', helper: 'Isso ajuda a adaptar a mensagem para a rotina dele.', options: ['Shih Tzu', 'Yorkshire', 'Maltês', 'Spitz', 'Pinscher', 'Outra Raça Pequena'] },
+      { key: 'age', question: 'Qual é a fase de vida dele?', helper: 'Cada fase pode pedir um cuidado diferente na rotina alimentar.', options: ['Filhote', 'Adulto', 'Sênior'] },
+      { key: 'weight', question: 'Ele pesa até 10kg?', helper: 'O protocolo foi pensado para cães pequenos e porções mais delicadas.', options: ['Sim, até 5kg', 'Sim, entre 5kg e 10kg', 'Não sei exatamente', 'Passa um pouco de 10kg'] },
+      { key: 'foodRoutine', question: 'Hoje ele come principalmente o quê?', helper: 'Isso mostra o quanto a rotina dele depende de ultraprocessados.', options: ['Só ração seca', 'Ração + sachê', 'Ração + comida caseira', 'Já tento dar comida natural'] },
+      { key: 'symptom', question: 'Qual sinal mais te preocupa hoje?', helper: 'Escolha o principal sintoma que você percebe.', options: ['Coceira Constante', 'Queda de Pelo/Opaco', 'Mau Hálito', 'Intestino Desregulado', 'Saudável'] },
+      { key: 'appetite', question: 'Como é o apetite dele?', helper: 'Isso mostra se a rotina atual está sendo prazerosa para ele.', options: ['Come de tudo', 'É muito enjoado'] },
+      { key: 'commitment', question: 'Quer ver como melhorar a alimentação dele de forma natural?', helper: 'Assista ao diagnóstico educativo e veja o próximo passo.', options: ['SIM! QUERO VER AGORA'] }
+    ];
+
+    const quizState = {};
+    let currentStep = 0;
+    let ctasReleased = false;
+
+    const quizQuestion = document.getElementById('quizQuestion');
+    const quizHelper = document.getElementById('quizHelper');
+    const quizOptions = document.getElementById('quizOptions');
+    const quizProgress = document.getElementById('quizProgress');
+    const quizContent = document.getElementById('quizContent');
+    const quizLoader = document.getElementById('quizLoader');
+    const loaderMessage = document.getElementById('loaderMessage');
+    const quizScreen = document.getElementById('quizScreen');
+    const salesWrapper = document.getElementById('salesWrapper');
+
+    function renderQuizStep() {
+      const step = quizSteps[currentStep];
+      quizQuestion.textContent = step.question;
+      quizHelper.textContent = step.helper;
+      quizProgress.style.width = `${((currentStep + 1) / quizSteps.length) * 100}%`;
+      quizOptions.innerHTML = step.options.map(option => `<button class="quiz-option" type="button" data-answer="${option}">${option}</button>`).join('');
+      quizOptions.querySelectorAll('.quiz-option').forEach(button => {
+        button.addEventListener('click', () => handleAnswer(button.dataset.answer));
+      });
+    }
+
+    function handleAnswer(answer) {
+      const step = quizSteps[currentStep];
+      quizState[step.key] = answer;
+      currentStep += 1;
+      if (currentStep < quizSteps.length) {
+        renderQuizStep();
+      } else {
+        localStorage.setItem('petQuizAnswers', JSON.stringify(quizState));
+        showLoaderAndSales();
+      }
+    }
+
+    function showLoaderAndSales() {
+      quizContent.style.display = 'none';
+      quizLoader.style.display = 'block';
+      const messages = ['Analisando perfil biológico...', 'Cruzando dados da raça...', 'Gerando diagnóstico...'];
+      let messageIndex = 0;
+      loaderMessage.textContent = messages[0];
+      const interval = setInterval(() => {
+        messageIndex = (messageIndex + 1) % messages.length;
+        loaderMessage.textContent = messages[messageIndex];
+      }, 1050);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        applyPersonalization();
+        quizScreen.style.display = 'none';
+        salesWrapper.classList.add('visible');
+        document.body.style.paddingBottom = '82px';
+        observeReveals();
+        setTimeout(() => document.getElementById('vslBox').scrollIntoView({ behavior: 'smooth', block: 'center' }), 450);
+        setTimeout(releaseCtas, 10000);
+      }, 3500);
+    }
+
+    function symptomText(symptom) {
+      const map = {
+        'Coceira Constante': 'dessa coceira',
+        'Queda de Pelo/Opaco': 'da queda de pelo',
+        'Mau Hálito': 'do mau hálito',
+        'Intestino Desregulado': 'do intestino desregulado',
+        'Saudável': 'dos sinais que ainda podem aparecer'
+      };
+      return map[symptom] || 'desse problema';
+    }
+
+    function symptomLabel(symptom) {
+      const map = {
+        'Coceira Constante': 'coceira',
+        'Queda de Pelo/Opaco': 'queda de pelo',
+        'Mau Hálito': 'mau hálito',
+        'Intestino Desregulado': 'intestino desregulado',
+        'Saudável': 'prevenção'
+      };
+      return map[symptom] || 'esse problema';
+    }
+
+    function applyPersonalization() {
+      const saved = JSON.parse(localStorage.getItem('petQuizAnswers') || '{}');
+      const breed = saved.breed || 'Outra Raça Pequena';
+      const symptom = saved.symptom || 'Coceira Constante';
+      const appetite = saved.appetite || 'É muito enjoado';
+      const genericBreed = breed === 'Outra Raça Pequena' ? 'cãozinho' : breed;
+      const symptomPhrase = symptomText(symptom);
+      const symptomShort = symptomLabel(symptom);
+
+      const headline = breed === 'Outra Raça Pequena'
+        ? `Por que a ração do seu cãozinho pode ser a causa ${symptomPhrase}?`
+        : `Por que a ração do seu ${breed} pode ser a causa ${symptomPhrase}?`;
+
+      document.getElementById('mainHeadline').textContent = headline;
+      document.getElementById('mainSubheadline').textContent = `Antes de colocar mais ração na tigela, assista a este vídeo e entenda por que ${genericBreed} pode precisar de uma rotina alimentar mais natural, principalmente quando aparece ${symptomShort}.`;
+      document.getElementById('personalBadge').textContent = `🐾 Diagnóstico educativo: ${genericBreed} • ${symptomShort}`;
+      document.getElementById('breedHeadline').textContent = breed === 'Outra Raça Pequena' ? 'UM PLANO PARA CÃES PEQUENOS COMO O SEU' : `UM PLANO PARA ${breed.toUpperCase()} COMO O SEU`;
+      document.getElementById('breedCopy').textContent = `${genericBreed} ${appetite === 'É muito enjoado' ? 'pode enjoar fácil da mesma rotina alimentar.' : 'também precisa de variedade e equilíbrio.'} O Protocolo Pet Natural organiza refeições simples para ajudar você a sair do improviso.`;
+      document.getElementById('offerHeadline').textContent = breed === 'Outra Raça Pequena'
+        ? 'COMECE HOJE UM PLANO NATURAL PARA O SEU CÃOZINHO'
+        : `COMECE HOJE UM PLANO NATURAL PARA O SEU ${breed.toUpperCase()}`;
+      document.getElementById('offerCopy').textContent = `Você leva o Protocolo Pet Natural completo, bônus e um caminho simples para começar a cuidar da alimentação do seu ${genericBreed} com mais segurança.`;
+      document.querySelector('.sticky-text').textContent = `${breed === 'Outra Raça Pequena' ? 'Protocolo Pet' : breed} • R$ 27,00`;
+    }
+
+    function releaseCtas() {
+      ctasReleased = true;
+      document.querySelectorAll('.hidden-delay').forEach(el => el.classList.remove('hidden-delay'));
+      updateStickyBar();
+    }
+
+    function observeReveals() {
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+      }, { threshold: 0.12 });
+      revealElements.forEach((element) => revealObserver.observe(element));
+    }
+
+    renderQuizStep();
+
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-question');
+      button.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach((faq) => { faq.classList.remove('active'); faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isActive) { item.classList.add('active'); button.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+
+    const stickyBar = document.getElementById('stickyBar');
+    const heroSection = document.getElementById('topo');
+    const offerSection = document.getElementById('oferta');
+    let heroVisible = true;
+    let offerVisible = false;
+
+    function updateStickyBar() {
+      if (!ctasReleased) return;
+      if (!heroVisible && !offerVisible) {
+        stickyBar.classList.add('visible');
+        stickyBar.classList.remove('hidden');
+      } else {
+        stickyBar.classList.remove('visible');
+        stickyBar.classList.add('hidden');
+      }
+    }
+
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { heroVisible = entry.isIntersecting; updateStickyBar(); });
+    }, { threshold: 0.05 });
+
+    const stickyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { offerVisible = entry.isIntersecting; updateStickyBar(); });
+    }, { threshold: 0.25 });
+
+    if (heroSection) heroObserver.observe(heroSection);
+    if (offerSection) stickyObserver.observe(offerSection);
+
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptCookies = document.getElementById('acceptCookies');
+    const manageCookies = document.getElementById('manageCookies');
+    const cookiePreferences = document.getElementById('cookiePreferences');
+    const saveCookies = document.getElementById('saveCookies');
+    const cookieConsent = localStorage.getItem('cookieConsentReceitasPet');
+    if (!cookieConsent) setTimeout(() => cookieBanner.classList.add('show'), 700);
+    acceptCookies.addEventListener('click', () => { localStorage.setItem('cookieConsentReceitasPet', JSON.stringify({ essentials: true, analytics: true, marketing: true })); cookieBanner.classList.remove('show'); });
+    manageCookies.addEventListener('click', () => cookiePreferences.classList.toggle('show'));
+    saveCookies.addEventListener('click', () => {
+      const analytics = document.getElementById('analyticsCookies').checked;
+      const marketing = document.getElementById('marketingCookies').checked;
+      localStorage.setItem('cookieConsentReceitasPet', JSON.stringify({ essentials: true, analytics, marketing }));
+      cookieBanner.classList.remove('show');
+    });
+  </script>
+</body>
+</html>
