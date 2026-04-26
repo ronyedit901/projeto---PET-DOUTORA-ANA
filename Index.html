@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocolo Pet Natural | Diagnóstico para Cães Pequenos</title>
+  <meta name="description" content="Faça um diagnóstico rápido do seu cãozinho e conheça o Protocolo Pet Natural: um plano com 100 refeições naturais para cães pequenos saírem da rotina da ração." />
+  <meta name="keywords" content="protocolo pet natural, plano alimentar para cães pequenos, alimentação natural para cachorro, comida natural para shih tzu, quiz saúde pet" />
+  <meta name="author" content="Dra. Ana Lúcia Matos" />
+  <meta property="og:title" content="Protocolo Pet Natural para Cães Pequenos" />
+  <meta property="og:description" content="Descubra o que a rotina alimentar pode estar fazendo com seu cãozinho e veja um plano natural para cães pequenos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/f5f0e8/1a3a2a?text=Protocolo+Pet+Natural" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="theme-color" content="#1a3a2a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --dark: #1a3a2a;
+      --darkest: #0f1a14;
+      --sage: #4a7c59;
+      --light-green: #7ab87a;
+      --cream: #f5f0e8;
+      --cream-2: #fffaf0;
+      --gold: #e8c547;
+      --earth: #8b5e3c;
+      --white: #ffffff;
+      --danger: #b53b2d;
+      --shadow: 0 22px 60px rgba(15, 26, 20, 0.16);
+      --soft-shadow: 0 12px 30px rgba(15, 26, 20, 0.10);
+      --radius-xl: 3rem;
+      --radius-xxl: 5rem;
+      --container: 1120px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--darkest);
+      font-size: 16px;
+      line-height: 1.55;
+      overflow-x: hidden;
+      padding-bottom: 82px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.035;
+      background-image:
+        radial-gradient(circle at 25% 25%, #000 0 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, #000 0 1px, transparent 1px);
+      background-size: 18px 18px, 24px 24px;
+      mix-blend-mode: multiply;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, a.button { min-height: 56px; border: 0; cursor: pointer; font-family: inherit; }
+    .container { width: min(100% - 32px, var(--container)); margin: 0 auto; }
+    section { padding: 72px 0; position: relative; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(232, 197, 71, 0.22);
+      color: var(--dark);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid rgba(26, 58, 42, 0.12);
+    }
+
+    h1, h2, h3 {
+      font-family: "Anton", Impact, sans-serif;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      color: var(--dark);
+    }
+
+    h1 { font-size: clamp(2.7rem, 12vw, 6.6rem); margin-top: 18px; }
+    h2 { font-size: clamp(2.15rem, 9vw, 5rem); margin-bottom: 20px; }
+    h3 { font-size: clamp(1.35rem, 6vw, 2.25rem); }
+
+    .serif { font-family: "DM Serif Display", serif; font-style: italic; font-weight: 400; }
+    .lead { font-size: clamp(1.05rem, 4vw, 1.34rem); color: rgba(15, 26, 20, 0.82); margin: 18px 0 0; }
+    .muted { color: rgba(15, 26, 20, 0.68); }
+    .center { text-align: center; }
+
+    .cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 64px;
+      padding: 18px 24px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--darkest);
+      font-weight: 900;
+      font-size: 1rem;
+      box-shadow: 0 14px 28px rgba(232, 197, 71, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity .25s ease;
+      text-align: center;
+    }
+
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(232, 197, 71, 0.36); }
+    .cta.hidden-delay, .delayed-offer.hidden-delay { opacity: 0; pointer-events: none; max-height: 0; overflow: hidden; margin: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+
+    .quiz-screen {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px 0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(122, 184, 122, 0.36), transparent 28%),
+        radial-gradient(circle at 92% 2%, rgba(232, 197, 71, 0.32), transparent 24%),
+        linear-gradient(180deg, var(--cream-2), var(--cream));
+    }
+
+    .quiz-card {
+      width: min(100% - 28px, 640px);
+      background: rgba(255, 255, 255, .74);
+      border: 1px solid rgba(26, 58, 42, .12);
+      border-radius: 2.6rem;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .quiz-progress {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(26, 58, 42, .12);
+      overflow: hidden;
+      margin: 22px 0;
+    }
+
+    .quiz-progress-bar {
+      height: 100%;
+      width: 20%;
+      background: var(--gold);
+      border-radius: 999px;
+      transition: width .25s ease;
+    }
+
+    .quiz-question {
+      font-family: "Anton", Impact, sans-serif;
+      color: var(--dark);
+      font-size: clamp(2rem, 9vw, 3.4rem);
+      line-height: .98;
+      letter-spacing: -.035em;
+      margin-bottom: 18px;
+    }
+
+    .quiz-helper { color: rgba(15, 26, 20, .72); font-weight: 700; margin-bottom: 18px; }
+    .quiz-options { display: grid; gap: 12px; }
+
+    .quiz-option {
+      width: 100%;
+      min-height: 62px;
+      padding: 16px 18px;
+      border-radius: 1.4rem;
+      background: var(--dark);
+      color: var(--cream);
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: left;
+      box-shadow: var(--soft-shadow);
+      transition: transform .15s ease, background .15s ease;
+    }
+
+    .quiz-option:active { transform: scale(.98); }
+    .quiz-option:hover { background: #24543c; }
+
+    .quiz-loader {
+      display: none;
+      text-align: center;
+      padding: 30px 12px;
+    }
+
+    .spinner {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 7px solid rgba(26, 58, 42, .12);
+      border-top-color: var(--gold);
+      margin: 0 auto 22px;
+      animation: spin 1s linear infinite;
+    }
+
+    .loader-message { font-weight: 900; color: var(--dark); font-size: 1.1rem; }
+    .diagnosis-note { margin-top: 16px; font-size: .88rem; color: rgba(15, 26, 20, .62); }
+
+    .sales-wrapper { display: none; opacity: 0; }
+    .sales-wrapper.visible { display: block; animation: fadeIn .7s ease forwards; }
+
+    .hero {
+      min-height: 100svh;
+      padding: 30px 0 74px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(122, 184, 122, 0.35), transparent 28%),
+        radial-gradient(circle at 92% 2%, rgba(232, 197, 71, 0.30), transparent 24%),
+        linear-gradient(180deg, var(--cream-2), var(--cream));
+    }
+
+    .hero-inner { max-width: 940px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+    .hero-sub { max-width: 820px; font-size: clamp(1.08rem, 4.5vw, 1.55rem); line-height: 1.25; color: var(--dark); margin: 18px auto 0; }
+
+    .urgency-strip {
+      margin: 22px auto 0;
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--darkest);
+      font-weight: 900;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .vsl-box {
+      margin: 28px auto 22px;
+      width: min(100%, 860px);
+      aspect-ratio: 16 / 9;
+      border-radius: 2.2rem;
+      background:
+        radial-gradient(circle at center, rgba(232, 197, 71, 0.18), transparent 42%),
+        linear-gradient(145deg, rgba(15, 26, 20, 0.96), rgba(26, 58, 42, 0.88));
+      border: 1px solid rgba(245, 240, 232, 0.18);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      color: var(--cream);
+    }
+
+    .play-button {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--darkest);
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      font-weight: 900;
+      box-shadow: 0 16px 38px rgba(232, 197, 71, 0.25);
+    }
+
+    .vsl-placeholder { color: rgba(245, 240, 232, .72); font-weight: 900; margin-top: -38px; }
+
+    .hero-bullets {
+      display: grid;
+      gap: 10px;
+      margin: 18px auto 0;
+      max-width: 720px;
+      text-align: left;
+    }
+
+    .hero-bullets span { display: flex; gap: 10px; align-items: flex-start; font-weight: 900; color: rgba(15, 26, 20, 0.82); }
+
+    .pain-list, .solution-grid, .included-grid, .bonus-grid, .testimonial-grid, .compare-grid, .stats-grid, .never-grid, .breed-grid, .risk-grid { display: grid; gap: 16px; margin-top: 28px; }
+    .pain-item, .mini-card, .included-card, .bonus-card, .testimonial, .faq-item, .compare-card, .breed-card, .risk-card, .protocol-card {
+      background: rgba(255, 255, 255, 0.64);
+      border: 1px solid rgba(26, 58, 42, 0.10);
+      border-radius: 2rem;
+      box-shadow: var(--soft-shadow);
+      padding: 24px;
+    }
+
+    .pain-item { padding: 16px 18px; font-weight: 900; display: flex; align-items: center; gap: 12px; }
+    .warning-box { margin-top: 28px; background: var(--gold); color: var(--darkest); border-radius: 2rem; padding: 22px; font-weight: 900; font-size: 1.15rem; box-shadow: var(--soft-shadow); }
+
+    .green-section { background: var(--dark); color: var(--cream); overflow: hidden; }
+    .green-section h2, .green-section h3 { color: var(--cream); }
+    .green-section .lead, .green-section .muted { color: rgba(245, 240, 232, 0.78); }
+    .green-section .risk-card, .green-section .bonus-card { background: rgba(245, 240, 232, 0.08); border-color: rgba(245, 240, 232, 0.14); color: var(--cream); }
+    .green-section .risk-card p, .green-section .bonus-card p { color: rgba(245, 240, 232, 0.76); }
+
+    .bonus-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .bonus-heading .bonus-heading-icon {
+      flex: 0 0 auto;
+      display: inline-grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(232, 197, 71, 0.14);
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1;
+      transform: translateY(2px);
+    }
+
+    .bonus-heading .bonus-heading-text {
+      display: block;
+      min-width: 0;
+    }
+
+    .bonus-intro {
+      max-width: 760px;
+      margin-top: 14px;
+    }
+
+    .mini-card .icon, .included-card .icon, .bonus-card .icon, .risk-card .icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+    .mini-card p, .included-card p, .bonus-card p, .risk-card p, .breed-card p, .protocol-card p { margin-top: 8px; color: rgba(15, 26, 20, 0.70); }
+
+    .breed-card { text-align: center; }
+    .breed-emoji { font-size: 2.2rem; margin-bottom: 12px; }
+    .breed-card.featured { background: var(--gold); transform: rotate(-1deg); }
+
+    .longevity-box { margin-top: 28px; display: grid; gap: 18px; align-items: center; background: rgba(232, 197, 71, 0.16); border: 1px solid rgba(232, 197, 71, 0.28); border-radius: var(--radius-xl); padding: 26px; box-shadow: var(--soft-shadow); }
+    .longevity-number { font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: clamp(4rem, 18vw, 8rem); line-height: .85; }
+
+    .author-card { margin-top: 28px; background: rgba(255,255,255,0.66); border-radius: var(--radius-xxl); padding: 24px; box-shadow: var(--shadow); display: grid; gap: 22px; }
+    .author-photo { width: 100%; aspect-ratio: 1 / 1.1; border-radius: 3.6rem; object-fit: cover; object-position: center top; border: 10px solid var(--cream); box-shadow: var(--soft-shadow); background: var(--sage); }
+    .stat { background: var(--dark); color: var(--cream); border-radius: 2rem; padding: 18px; text-align: center; }
+    .stat strong { display: block; font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: 2.2rem; line-height: 1; }
+
+    .free-badge { display: inline-block; margin-top: 16px; padding: 8px 14px; border-radius: 999px; background: var(--gold); color: var(--darkest); font-weight: 900; }
+    .testimonial { font-weight: 600; }
+    .stars { color: var(--gold); letter-spacing: 1px; margin-bottom: 12px; display: block; }
+    .testimonial cite { display: block; margin-top: 14px; color: var(--sage); font-style: normal; font-weight: 900; }
+
+    .offer-box { margin-top: 28px; padding: 26px; border-radius: var(--radius-xl); background: rgba(245, 240, 232, 0.10); border: 1px solid rgba(245, 240, 232, 0.18); box-shadow: var(--shadow); }
+    .offer-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 14px; padding: 13px 0; border-bottom: 1px solid rgba(245, 240, 232, 0.16); font-weight: 800; }
+    .offer-row span { min-width: 0; overflow-wrap: anywhere; }
+    .offer-row strong { white-space: nowrap; text-align: right; }
+    .offer-total { margin-top: 20px; text-align: center; }
+    .offer-total .small { display: block; color: rgba(245, 240, 232, 0.70); text-decoration: line-through; font-weight: 800; }
+    .offer-total .big { display: block; font-family: "Anton", Impact, sans-serif; color: var(--gold); font-size: clamp(4rem, 18vw, 6.2rem); line-height: 1; }
+    .guarantee-card { display: grid; gap: 14px; margin-top: 24px; background: rgba(232, 197, 71, 0.16); border: 1px solid rgba(232, 197, 71, 0.25); padding: 24px; border-radius: 2.4rem; }
+
+    .faq-list { display: grid; gap: 14px; margin-top: 28px; }
+    .faq-item { overflow: hidden; padding: 0; }
+    .faq-question { width: 100%; background: transparent; padding: 20px; min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; color: var(--darkest); font-size: 1rem; font-weight: 900; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .faq-answer p { padding: 0 20px 20px; color: rgba(15, 26, 20, 0.72); }
+    .faq-item.active .faq-answer { max-height: 270px; }
+    .faq-item .plus { font-size: 1.5rem; transition: transform 0.2s ease; }
+    .faq-item.active .plus { transform: rotate(45deg); }
+
+    .never-grid { grid-template-columns: repeat(2, 1fr); }
+    .never-item { background: rgba(181, 59, 45, 0.08); border: 1px solid rgba(181, 59, 45, 0.14); color: var(--danger); font-weight: 900; padding: 14px; border-radius: 1.4rem; text-align: center; }
+
+    .legal { background: #10251a; color: rgba(245, 240, 232, 0.82); padding-bottom: 120px; }
+    .legal h2 { color: var(--cream); }
+    .legal-card { background: rgba(245, 240, 232, 0.08); border: 1px solid rgba(245, 240, 232, 0.12); padding: 24px; border-radius: 2.2rem; margin-top: 24px; }
+    .legal-card ul { margin: 18px 0 0 20px; }
+    .legal-card li { margin-bottom: 10px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .footer-links a { color: var(--gold); font-weight: 900; text-decoration: underline; text-underline-offset: 4px; }
+
+    .sticky-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000; background: #e8c547; box-shadow: 0 -12px 30px rgba(15, 26, 20, 0.18); padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); transition: transform 0.25s ease, opacity .25s ease; transform: translateY(120%); }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar.hidden { transform: translateY(120%); }
+    .sticky-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; max-width: var(--container); margin: 0 auto; }
+    .sticky-text { min-width: 0; font-weight: 900; color: var(--darkest); line-height: 1.12; font-size: clamp(0.86rem, 3.5vw, 1rem); overflow-wrap: anywhere; }
+    .sticky-button { min-height: 54px; padding: 0 18px; border-radius: 999px; background: var(--darkest); color: var(--cream); font-weight: 900; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-size: clamp(0.86rem, 3.6vw, 1rem); min-width: 170px; }
+
+    @media (max-width: 390px) {
+      .sticky-inner { gap: 8px; }
+      .sticky-button { min-width: 154px; padding: 0 14px; font-size: 0.86rem; }
+      .sticky-text { font-size: 0.84rem; }
+    }
+
+    .cookie-banner { position: fixed; left: 14px; right: 14px; bottom: 92px; z-index: 9500; background: var(--cream-2); border: 1px solid rgba(26, 58, 42, 0.14); border-radius: 1.6rem; box-shadow: var(--shadow); padding: 18px; display: none; }
+    .cookie-banner.show { display: block; }
+    .cookie-actions { display: grid; gap: 10px; margin-top: 14px; }
+    .cookie-actions button { border-radius: 999px; padding: 12px 16px; font-weight: 900; min-height: 48px; }
+    .accept-cookies { background: var(--dark); color: var(--cream); }
+    .manage-cookies { background: rgba(26, 58, 42, 0.08); color: var(--dark); }
+    .cookie-preferences { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(26, 58, 42, 0.10); }
+    .cookie-preferences.show { display: grid; gap: 10px; }
+    .cookie-toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-weight: 800; }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    @media (min-width: 760px) {
+      body { padding-bottom: 0; }
+      section { padding: 104px 0; }
+      .hero { padding-top: 54px; }
+      .cta { width: auto; min-width: 310px; }
+      .hero-bullets { grid-template-columns: repeat(3, 1fr); }
+      .pain-list { grid-template-columns: repeat(3, 1fr); }
+      .solution-grid, .testimonial-grid, .compare-grid, .stats-grid, .risk-grid { grid-template-columns: repeat(3, 1fr); }
+      .included-grid { grid-template-columns: repeat(4, 1fr); }
+      .bonus-grid, .compare-grid { grid-template-columns: repeat(2, 1fr); }
+      .breed-grid { grid-template-columns: repeat(5, 1fr); }
+      .author-card { grid-template-columns: 360px 1fr; align-items: center; padding: 34px; }
+      .longevity-box { grid-template-columns: 240px 1fr; }
+      .never-grid { grid-template-columns: repeat(4, 1fr); }
+      .sticky-bar { display: none; }
+      .cookie-banner { left: auto; right: 24px; bottom: 24px; max-width: 460px; }
+      .cookie-actions { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '130128875697252');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=130128875697252&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <section class="quiz-screen" id="quizScreen">
+    <div class="quiz-card" id="quizCard">
+      <span class="eyebrow">🐾 Diagnóstico rápido do seu cãozinho</span>
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgress"></div></div>
+      <div id="quizContent">
+        <div class="quiz-question" id="quizQuestion"></div>
+        <p class="quiz-helper" id="quizHelper"></p>
+        <div class="quiz-options" id="quizOptions"></div>
+      </div>
+      <div class="quiz-loader" id="quizLoader">
+        <div class="spinner"></div>
+        <div class="loader-message" id="loaderMessage">Analisando perfil biológico...</div>
+        <p class="diagnosis-note">Análise educativa baseada nas suas respostas. Não substitui avaliação veterinária.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sales-wrapper" id="salesWrapper">
+    <header class="hero" id="topo">
+      <div class="container hero-inner reveal">
+        <span class="eyebrow" id="personalBadge">🐾 Resultado personalizado para cães pequenos</span>
+        <h1 id="mainHeadline">A RAÇÃO DE HOJE PODE VIRAR O PROBLEMA DE AMANHÃ</h1>
+        <p class="hero-sub serif" id="mainSubheadline">Antes de comprar mais um pacote de ração, veja por que a rotina alimentar do seu cãozinho pode estar por trás dos sinais que ele mostra todos os dias.</p>
+        <div class="vsl-box" id="vslBox" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
+          <iframe 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:16px;"
+            src="https://www.youtube.com/embed/2D5wMs4nXF4?rel=0&modestbranding=1&showinfo=0"
+            title="VSL Dra. Ana Lúcia Matos"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="hero-bullets">
+          <span>✅ Plano para cães pequenos de até 10kg</span>
+          <span>✅ Sem sal e sem temperos humanos</span>
+          <span>✅ Acesso imediato + garantia de 30 dias</span>
+        </div>
+
+        <div style="margin-top:26px;" class="delayed-offer hidden-delay">
+          <a class="cta" href="https://pay.kiwify.com.br/CRuhaQo">QUERO CONHECER O PROTOCOLO</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="racas">
+        <div class="container reveal center">
+          <h2 id="breedHeadline">FEITO PARA CÃES PEQUENOS COMO O SEU</h2>
+          <p class="lead" id="breedCopy">Um plano prático para cães de pequeno porte de até 10kg, com preparo simples, ingredientes acessíveis e orientações para uma rotina alimentar mais natural.</p>
+          <div class="breed-grid">
+            <div class="breed-card featured"><div class="breed-emoji">🐶</div><h3>Shih Tzu</h3><p>Ideal para tutoras que querem variar a alimentação sem complicar a rotina.</p></div>
+            <div class="breed-card"><div class="breed-emoji">🐾</div><h3>Yorkshire</h3><p>Receitas simples para cães pequenos, sensíveis e seletivos com comida.</p></div>
+            <div class="breed-card"><div class="breed-emoji">🤍</div><h3>Maltês</h3><p>Opções naturais para trazer mais variedade e cuidado na rotina.</p></div>
+            <div class="breed-card"><div class="breed-emoji">✨</div><h3>Spitz</h3><p>Refeições pensadas para cães pequenos que precisam de equilíbrio e energia.</p></div>
+            <div class="breed-card"><div class="breed-emoji">⚡</div><h3>Pinscher</h3><p>Alternativas práticas para cães pequenos com muita personalidade.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dor">
+        <div class="container reveal">
+          <h2>SEU CACHORRINHO TEM ALGUM DESSES SINAIS?</h2>
+          <p class="lead">Muita tutora acha que isso é “normal da raça”. Mas, em muitos casos, o corpo do pet está dando sinais de que a rotina alimentar não está fazendo bem.</p>
+          <div class="pain-list">
+            <div class="pain-item">❌ Coceira constante</div>
+            <div class="pain-item">❌ Queda de pelo</div>
+            <div class="pain-item">❌ Mau hálito</div>
+            <div class="pain-item">❌ Lágrima ácida</div>
+            <div class="pain-item">❌ Intestino desregulado</div>
+            <div class="pain-item">❌ Falta de apetite</div>
+            <div class="pain-item">❌ Pouca disposição</div>
+            <div class="pain-item">❌ Enjoo da ração</div>
+            <div class="pain-item">❌ Fezes com cheiro forte</div>
+          </div>
+          <div class="warning-box">A culpa pode não ser do seu cãozinho. Pode ser da alimentação que ele recebe todos os dias.</div>
+          <p class="muted" style="margin-top:16px;">Esses sinais também podem ter outras causas. Sempre consulte um veterinário em caso de sintomas persistentes.</p>
+        </div>
+      </section>
+
+      <section class="green-section" id="inimigo">
+        <div class="container reveal">
+          <h2>O INIMIGO NÃO É O SEU PET. É A ROTINA ULTRAPROCESSADA.</h2>
+          <p class="lead">A indústria sabe que o dono quer praticidade. Por isso, vende um alimento seco, cheiroso, colorido e feito para durar meses na prateleira. Mas o corpinho de um cão pequeno pode sentir rápido quando a rotina alimentar não combina com ele.</p>
+          <div class="risk-grid">
+            <div class="risk-card"><span class="icon">🏭</span><h3>Feito para durar</h3><p>Nem tudo que é prático para a prateleira é ideal como única rotina todos os dias.</p></div>
+            <div class="risk-card"><span class="icon">🎨</span><h3>Bonito para o dono</h3><p>Grãos coloridos conversam mais com o olho humano do que com a necessidade do pet.</p></div>
+            <div class="risk-card"><span class="icon">🐾</span><h3>Sinais no corpo</h3><p>Coceira, queda de pelo, mau hálito e intestino irregular podem ser alertas para investigar.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="perda">
+        <div class="container reveal">
+          <h2>O QUE VOCÊ PODE ESTAR PERDENDO SEM PERCEBER</h2>
+          <p class="lead">Quando o pet come mal por meses ou anos, o prejuízo aparece aos poucos: menos energia, mais coceira, mais remédio, mais gasto e menos qualidade de vida.</p>
+          <div class="risk-grid">
+            <div class="risk-card"><span class="icon">💸</span><h3>Mais gastos depois</h3><p>Consulta, remédio, pomada, ração especial e exames costumam pesar muito mais que prevenção.</p></div>
+            <div class="risk-card"><span class="icon">😔</span><h3>Sofrimento silencioso</h3><p>Ele não sabe explicar. Ele só coça, recusa comida, fica quieto ou perde brilho.</p></div>
+            <div class="risk-card"><span class="icon">⏳</span><h3>Menos tempo de qualidade</h3><p>O objetivo não é só viver mais. É viver melhor, com mais disposição e menos desconforto.</p></div>
+          </div>
+          <div class="longevity-box">
+            <div class="longevity-number">+1,8</div>
+            <div>
+              <h3>Anos de vida importam. Qualidade de vida também.</h3>
+              <p class="lead">Pesquisas sobre nutrição, peso saudável e longevidade em cães indicam que uma rotina alimentar controlada pode estar associada a mais tempo de vida e atraso de sinais crônicos. Não é promessa de cura nem garantia de anos extras — é um motivo sério para tratar alimentação como prioridade.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solucao">
+        <div class="container reveal">
+          <h2>A ALIMENTAÇÃO NATURAL FAZ O CAMINHO CONTRÁRIO</h2>
+          <p class="lead">Em vez de só “encher a barriga”, ela entrega comida de verdade, com ingredientes simples, preparo fácil e benefícios reais para a rotina do seu cãozinho.</p>
+          <div class="solution-grid">
+            <div class="mini-card"><span class="icon">🍽️</span><h3>Come com mais vontade</h3><p>Refeições simples, cheirosas e adaptadas para cães pequenos.</p></div>
+            <div class="mini-card"><span class="icon">✨</span><h3>Pelo mais bonito</h3><p>Ingredientes naturais que ajudam o corpo a funcionar melhor.</p></div>
+            <div class="mini-card"><span class="icon">💚</span><h3>Intestino mais regulado</h3><p>Opções pensadas para uma alimentação mais equilibrada.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="metodo">
+        <div class="container reveal">
+          <h2>O MÉTODO DAS 3 REFEIÇÕES SEGURAS</h2>
+          <p class="lead">O Protocolo Pet Natural transforma receitas soltas em um plano simples para você saber o que preparar, como preparar e como servir sem inventar nada.</p>
+          <div class="solution-grid">
+            <div class="protocol-card"><h3>1. Ingredientes simples</h3><p>Itens acessíveis de mercado, sem sal, sem açúcar e sem temperos humanos.</p></div>
+            <div class="protocol-card"><h3>2. Preparo guiado</h3><p>Modo de preparo direto para você não ficar perdida na cozinha.</p></div>
+            <div class="protocol-card"><h3>3. Porção para pequenos</h3><p>Orientações pensadas para cães de pequeno porte de até 10kg.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="autora">
+        <div class="container reveal">
+          <h2>QUEM É A DRA. ANA LÚCIA MATOS</h2>
+          <div class="author-card">
+            <img class="author-photo" src="data:image/jpeg;base64,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" alt="Dra. Ana Lúcia Matos, veterinária especialista em nutrição natural, segurando um cão pequeno no colo em clínica veterinária" loading="lazy" />
+            <div>
+              <p class="lead">A Dra. Ana Lúcia Matos é veterinária especialista em nutrição natural há 12 anos. Ao longo da sua trajetória, já orientou mais de 15.000 tutoras a melhorarem a rotina alimentar dos seus pets com comida de verdade, de forma simples, prática e responsável.</p>
+              <div class="stats-grid">
+                <div class="stat"><strong>12</strong>anos de experiência</div>
+                <div class="stat"><strong>15.000+</strong>tutoras orientadas</div>
+                <div class="stat"><strong>100</strong>refeições naturais</div>
+              </div>
+              <div class="guarantee-card"><h3>Autoridade com carinho de mãe de pet</h3><p>Conteúdo educativo criado para ajudar tutoras de cães pequenos a oferecerem refeições mais naturais, saborosas e adequadas à rotina do pet.</p></div>
+              <p class="muted" style="margin-top:16px;">As informações do protocolo são educativas e não substituem avaliação veterinária individual.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="incluido">
+        <div class="container reveal">
+          <h2>O QUE VEM DENTRO DO PROTOCOLO</h2>
+          <div class="included-grid">
+            <div class="included-card"><span class="icon">☀️</span><h3>Café da manhã</h3><p>20 opções naturais para começar o dia com energia.</p></div>
+            <div class="included-card"><span class="icon">🍽️</span><h3>Almoço e jantar</h3><p>40 refeições completas para variar a rotina do pet.</p></div>
+            <div class="included-card"><span class="icon">🐾</span><h3>Petiscos e snacks</h3><p>25 opções naturais para agradar sem culpa.</p></div>
+            <div class="included-card"><span class="icon">💊</span><h3>Rotinas especiais</h3><p>15 opções pensadas para necessidades comuns da rotina.</p></div>
+          </div>
+          <p class="lead">Cada preparo vem com ingredientes, modo de preparo, benefício principal e porção indicada para cães de pequeno porte.</p>
+        </div>
+      </section>
+
+      <section class="green-section" id="bonus">
+        <div class="container reveal">
+          <h2 class="bonus-heading"><span class="bonus-heading-icon">🎁</span><span class="bonus-heading-text">BÔNUS EXCLUSIVOS — GRÁTIS HOJE</span></h2>
+          <p class="lead bonus-intro">Você não recebe só uma lista de preparos. Recebe um plano simples para começar sem se perder.</p>
+          <div class="bonus-grid">
+            <div class="bonus-card"><span class="icon">📅</span><h3>Calendário Alimentar de 7 Dias</h3><p>Um cardápio completo da semana para você imprimir e seguir sem pensar.</p><span class="free-badge">R$ 17,00 • GRÁTIS</span></div>
+            <div class="bonus-card"><span class="icon">🛒</span><h3>Lista de Compras Natural</h3><p>O que comprar no mercado para preparar 30 dias de alimentação natural.</p><span class="free-badge">R$ 12,00 • GRÁTIS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparacao">
+        <div class="container reveal">
+          <h2>O PREÇO DE COMEÇAR HOJE É PEQUENO. O DE ADIAR PODE SAIR CARO.</h2>
+          <div class="compare-grid">
+            <div class="compare-card"><h3>Consulta veterinária</h3><p class="lead">R$ 150 a R$ 300</p></div>
+            <div class="compare-card"><h3>Remédios e pomadas</h3><p class="lead">R$ 80 a R$ 200</p></div>
+            <div class="compare-card"><h3>Rações especiais</h3><p class="lead">R$ 100 a R$ 300/mês</p></div>
+            <div class="compare-card" style="background: var(--gold);"><h3>Protocolo completo</h3><p class="lead"><strong>R$ 27,00 pagamento único</strong></p></div>
+          </div>
+          <p class="lead">Por menos do que uma ida ao pet shop, você recebe um plano organizado para começar a preparar refeições naturais e melhorar a rotina do seu cãozinho todos os dias.</p>
+        </div>
+      </section>
+
+      <section id="depoimentos-oferta">
+        <div class="container reveal">
+          <h2>QUEM COMEÇOU, SENTIU A DIFERENÇA</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial"><span class="stars">★★★★★</span><p>“Meu Shih Tzu começou a comer com vontade na primeira semana! A coceira passou em 15 dias.”</p><cite>— Camila R., tutora do Max</cite></article>
+            <article class="testimonial"><span class="stars">★★★★<span style="opacity:0.4">★</span></span><p>“Minha cachorrinha estava com pelo horrível. Depois de 1 mês ficou irreconhecível!”</p><cite>— Patricia M., tutora da Luna</cite></article>
+            <article class="testimonial"><span class="stars">★★★★☆</span><p>“Uso os ingredientes que tenho em casa e ela ama cada receitinha!”</p><cite>— Sandra L., tutora da Ravena</cite></article>
+          </div>
+          <p class="muted" style="margin-top:16px;">Resultados podem variar de acordo com a rotina, condição individual do pet e acompanhamento veterinário.</p>
+        </div>
+      </section>
+
+      <section class="green-section delayed-offer hidden-delay" id="oferta">
+        <div class="container reveal">
+          <h2 id="offerHeadline">NÃO ESPERE SEU CÃOZINHO PIORAR PARA COMEÇAR A CUIDAR DA COMIDA DELE</h2>
+          <p class="lead" id="offerCopy">Hoje você leva o Protocolo Pet Natural completo, os bônus e um caminho simples para começar a alimentação natural com mais segurança.</p>
+          <div class="offer-box">
+            <div class="offer-row"><span>✅ Protocolo Pet Natural — 100 Refeições</span><strong>R$ 47,00</strong></div>
+            <div class="offer-row"><span>🎁 Calendário Alimentar de 7 Dias</span><strong>R$ 17,00</strong></div>
+            <div class="offer-row"><span>🎁 Lista de Compras Natural</span><strong>R$ 12,00</strong></div>
+            <div class="offer-total"><span class="small">Total: R$ 76,00</span><span>Hoje por apenas</span><span class="big">R$ 27,00</span></div>
+            <div style="margin-top:24px; text-align:center;"><a class="cta" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Comprar agora por R$ 27,00">SIM! QUERO COMEÇAR — R$ 27,00</a></div>
+          </div>
+          <div class="guarantee-card"><h3>🛡️ Garantia incondicional de 30 dias</h3><p>Se você não gostar do conteúdo, devolvemos 100% do seu dinheiro. O risco fica comigo. A chance de cuidar melhor do seu pet fica com você.</p></div>
+        </div>
+      </section>
+
+      <section id="garantia">
+        <div class="container reveal">
+          <h2>VOCÊ TESTA SEM RISCO POR 30 DIAS</h2>
+          <p class="lead">Se o protocolo não for para você, basta solicitar o reembolso dentro do prazo de garantia. Sem burocracia. Sem letras miúdas. Sem perguntas desconfortáveis.</p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container reveal">
+          <h2>DÚVIDAS FREQUENTES</h2>
+          <div class="faq-list">
+            <div class="faq-item active"><button class="faq-question" aria-expanded="true">Preciso ser veterinária para seguir o protocolo? <span class="plus">+</span></button><div class="faq-answer"><p>Não. O plano foi pensado para tutoras comuns, com ingredientes simples de mercado e passo a passo fácil.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Funciona para qualquer raça pequena? <span class="plus">+</span></button><div class="faq-answer"><p>Sim. O conteúdo é indicado para cães de pequeno porte de até 10kg, como Shih Tzu, Yorkshire, Maltês, Spitz, Pinscher e raças semelhantes.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Como recebo o acesso? <span class="plus">+</span></button><div class="faq-answer"><p>Você recebe o acesso imediatamente após a confirmação do pagamento, direto no seu e-mail.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">E se eu não gostar? <span class="plus">+</span></button><div class="faq-answer"><p>Você tem 30 dias de garantia. Se não gostar, pode solicitar reembolso total.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Posso substituir a ração completamente? <span class="plus">+</span></button><div class="faq-answer"><p>A transição deve ser gradual. Recomendamos acompanhamento veterinário, principalmente se o pet tiver doenças, alergias ou necessidades específicas.</p></div></div>
+            <div class="faq-item"><button class="faq-question" aria-expanded="false">Posso usar tempero humano? <span class="plus">+</span></button><div class="faq-answer"><p>Não. As refeições não devem receber sal, açúcar, óleo em excesso, temperos prontos, cebola, alho ou qualquer ingrediente tóxico para cães.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seguranca-alimentar">
+        <div class="container reveal">
+          <h2>ATENÇÃO: O QUE NUNCA COLOCAR NA COMIDA DO SEU CÃO</h2>
+          <p class="lead">Cães não devem comer como humanos. Alguns alimentos comuns na nossa cozinha podem ser perigosos para eles.</p>
+          <div class="never-grid">
+            <div class="never-item">❌ Sal</div><div class="never-item">❌ Açúcar</div><div class="never-item">❌ Chocolate</div><div class="never-item">❌ Cebola</div><div class="never-item">❌ Alho</div><div class="never-item">❌ Uva</div><div class="never-item">❌ Uva-passa</div><div class="never-item">❌ Álcool</div><div class="never-item">❌ Café</div><div class="never-item">❌ Ossos cozidos</div><div class="never-item">❌ Temperos prontos</div><div class="never-item">❌ Frituras</div><div class="never-item">❌ Doces</div><div class="never-item">❌ Xilitol</div><div class="never-item">❌ Embutidos</div><div class="never-item">❌ Gordura excessiva</div>
+          </div>
+          <p class="lead">O protocolo orienta refeições próprias para cães, sem temperos humanos e sem ingredientes perigosos.</p>
+        </div>
+      </section>
+
+      <section class="green-section delayed-offer hidden-delay" id="checkout">
+        <div class="container reveal center">
+          <h2>SEU CACHORRINHO NÃO PRECISA COMER SEMPRE A MESMA COISA</h2>
+          <p class="lead">Com o Protocolo Pet Natural da Dra. Ana Lúcia, você tem um caminho simples para oferecer mais variedade, mais cuidado e mais amor em cada refeição.</p>
+          <div style="margin-top:28px;"><a class="cta" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Ir para o checkout e comprar por R$ 27,00">QUERO COMEÇAR HOJE POR R$ 27,00</a></div>
+        </div>
+      </section>
+
+      <section class="legal" id="privacidade">
+        <div class="container reveal">
+          <h2>PRIVACIDADE, SEGURANÇA E TRANSPARÊNCIA</h2>
+          <div class="legal-card">
+            <p>Ao comprar este produto, seus dados pessoais serão utilizados apenas para processar o pagamento, liberar o acesso ao protocolo, enviar comunicações relacionadas à compra e oferecer suporte ao cliente.</p>
+            <ul>
+              <li>Os dados são tratados de acordo com a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018.</li>
+              <li>A página pode utilizar cookies, pixels de rastreamento e ferramentas de análise para melhorar a experiência do usuário e medir campanhas de marketing.</li>
+              <li>Você pode solicitar informações, correção ou exclusão dos seus dados pelos canais de atendimento informados.</li>
+              <li>Seus dados não serão vendidos a terceiros.</li>
+              <li>Dados de pagamento são processados por plataforma segura de checkout.</li>
+            </ul>
+            <div class="footer-links"><a href="politica-privacidade.html">Política de Privacidade</a><a href="termos-de-uso.html">Termos de Uso</a><a href="politica-reembolso.html">Política de Reembolso</a><a href="https://wa.me/5518982065723" target="_blank">Contato/Suporte</a></div>
+          </div>
+          <div class="legal-card"><p><strong>Aviso responsável:</strong> Este material possui finalidade educativa e não substitui consulta com médico-veterinário. Em caso de doenças, alergias, sintomas persistentes, filhotes, idosos, gestantes ou cães com condições especiais, procure orientação profissional antes de alterar a alimentação do pet. Não prometemos cura, tratamento ou aumento garantido de expectativa de vida.</p></div>
+          <p style="margin-top:24px;">© 2026 Protocolo Pet Natural. Todos os direitos reservados.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="sticky-bar hidden-delay hidden" id="stickyBar" aria-label="Barra fixa de compra"><div class="sticky-inner"><div class="sticky-text">Protocolo Pet • R$ 27,00</div><a class="sticky-button" href="https://pay.kiwify.com.br/CRuhaQo" aria-label="Comprar agora">COMPRAR AGORA →</a></div></div>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <p><strong>Usamos cookies</strong> para melhorar sua experiência, medir acessos e personalizar anúncios. Ao continuar, você concorda com nossa Política de Privacidade.</p>
+    <div class="cookie-actions"><button class="accept-cookies" id="acceptCookies">Aceitar</button><button class="manage-cookies" id="manageCookies">Gerenciar preferências</button></div>
+    <div class="cookie-preferences" id="cookiePreferences"><label class="cookie-toggle">Essenciais <input type="checkbox" checked disabled /></label><label class="cookie-toggle">Analíticos <input type="checkbox" id="analyticsCookies" /></label><label class="cookie-toggle">Marketing <input type="checkbox" id="marketingCookies" /></label><button class="accept-cookies" id="saveCookies">Salvar preferências</button></div>
+  </div>
+
+  <script>
+    const quizSteps = [
+      { key: 'breed', question: 'Qual é a raça do seu cãozinho?', helper: 'Isso ajuda a adaptar a mensagem para a rotina dele.', options: ['Shih Tzu', 'Yorkshire', 'Maltês', 'Spitz', 'Pinscher', 'Outra Raça Pequena'] },
+      { key: 'age', question: 'Qual é a fase de vida dele?', helper: 'Cada fase pode pedir um cuidado diferente na rotina alimentar.', options: ['Filhote', 'Adulto', 'Sênior'] },
+      { key: 'weight', question: 'Ele pesa até 10kg?', helper: 'O protocolo foi pensado para cães pequenos e porções mais delicadas.', options: ['Sim, até 5kg', 'Sim, entre 5kg e 10kg', 'Não sei exatamente', 'Passa um pouco de 10kg'] },
+      { key: 'foodRoutine', question: 'Hoje ele come principalmente o quê?', helper: 'Isso mostra o quanto a rotina dele depende de ultraprocessados.', options: ['Só ração seca', 'Ração + sachê', 'Ração + comida caseira', 'Já tento dar comida natural'] },
+      { key: 'symptom', question: 'Qual sinal mais te preocupa hoje?', helper: 'Escolha o principal sintoma que você percebe.', options: ['Coceira Constante', 'Queda de Pelo/Opaco', 'Mau Hálito', 'Intestino Desregulado', 'Saudável'] },
+      { key: 'appetite', question: 'Como é o apetite dele?', helper: 'Isso mostra se a rotina atual está sendo prazerosa para ele.', options: ['Come de tudo', 'É muito enjoado'] },
+      { key: 'commitment', question: 'Quer ver como melhorar a alimentação dele de forma natural?', helper: 'Assista ao diagnóstico educativo e veja o próximo passo.', options: ['SIM! QUERO VER AGORA'] }
+    ];
+
+    const quizState = {};
+    let currentStep = 0;
+    let ctasReleased = false;
+
+    const quizQuestion = document.getElementById('quizQuestion');
+    const quizHelper = document.getElementById('quizHelper');
+    const quizOptions = document.getElementById('quizOptions');
+    const quizProgress = document.getElementById('quizProgress');
+    const quizContent = document.getElementById('quizContent');
+    const quizLoader = document.getElementById('quizLoader');
+    const loaderMessage = document.getElementById('loaderMessage');
+    const quizScreen = document.getElementById('quizScreen');
+    const salesWrapper = document.getElementById('salesWrapper');
+
+    function renderQuizStep() {
+      const step = quizSteps[currentStep];
+      quizQuestion.textContent = step.question;
+      quizHelper.textContent = step.helper;
+      quizProgress.style.width = `${((currentStep + 1) / quizSteps.length) * 100}%`;
+      quizOptions.innerHTML = step.options.map(option => `<button class="quiz-option" type="button" data-answer="${option}">${option}</button>`).join('');
+      quizOptions.querySelectorAll('.quiz-option').forEach(button => {
+        button.addEventListener('click', () => handleAnswer(button.dataset.answer));
+      });
+    }
+
+    function handleAnswer(answer) {
+      const step = quizSteps[currentStep];
+      quizState[step.key] = answer;
+      currentStep += 1;
+      if (currentStep < quizSteps.length) {
+        renderQuizStep();
+      } else {
+        localStorage.setItem('petQuizAnswers', JSON.stringify(quizState));
+        showLoaderAndSales();
+      }
+    }
+
+    function showLoaderAndSales() {
+      quizContent.style.display = 'none';
+      quizLoader.style.display = 'block';
+      const messages = ['Analisando perfil biológico...', 'Cruzando dados da raça...', 'Gerando diagnóstico...'];
+      let messageIndex = 0;
+      loaderMessage.textContent = messages[0];
+      const interval = setInterval(() => {
+        messageIndex = (messageIndex + 1) % messages.length;
+        loaderMessage.textContent = messages[messageIndex];
+      }, 1050);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        applyPersonalization();
+        quizScreen.style.display = 'none';
+        salesWrapper.classList.add('visible');
+        document.body.style.paddingBottom = '82px';
+        observeReveals();
+        setTimeout(() => document.getElementById('vslBox').scrollIntoView({ behavior: 'smooth', block: 'center' }), 450);
+        setTimeout(releaseCtas, 10000);
+      }, 3500);
+    }
+
+    function symptomText(symptom) {
+      const map = {
+        'Coceira Constante': 'dessa coceira',
+        'Queda de Pelo/Opaco': 'da queda de pelo',
+        'Mau Hálito': 'do mau hálito',
+        'Intestino Desregulado': 'do intestino desregulado',
+        'Saudável': 'dos sinais que ainda podem aparecer'
+      };
+      return map[symptom] || 'desse problema';
+    }
+
+    function symptomLabel(symptom) {
+      const map = {
+        'Coceira Constante': 'coceira',
+        'Queda de Pelo/Opaco': 'queda de pelo',
+        'Mau Hálito': 'mau hálito',
+        'Intestino Desregulado': 'intestino desregulado',
+        'Saudável': 'prevenção'
+      };
+      return map[symptom] || 'esse problema';
+    }
+
+    function applyPersonalization() {
+      const saved = JSON.parse(localStorage.getItem('petQuizAnswers') || '{}');
+      const breed = saved.breed || 'Outra Raça Pequena';
+      const symptom = saved.symptom || 'Coceira Constante';
+      const appetite = saved.appetite || 'É muito enjoado';
+      const genericBreed = breed === 'Outra Raça Pequena' ? 'cãozinho' : breed;
+      const symptomPhrase = symptomText(symptom);
+      const symptomShort = symptomLabel(symptom);
+
+      const headline = breed === 'Outra Raça Pequena'
+        ? `Por que a ração do seu cãozinho pode ser a causa ${symptomPhrase}?`
+        : `Por que a ração do seu ${breed} pode ser a causa ${symptomPhrase}?`;
+
+      document.getElementById('mainHeadline').textContent = headline;
+      document.getElementById('mainSubheadline').textContent = `Antes de colocar mais ração na tigela, assista a este vídeo e entenda por que ${genericBreed} pode precisar de uma rotina alimentar mais natural, principalmente quando aparece ${symptomShort}.`;
+      document.getElementById('personalBadge').textContent = `🐾 Diagnóstico educativo: ${genericBreed} • ${symptomShort}`;
+      document.getElementById('breedHeadline').textContent = breed === 'Outra Raça Pequena' ? 'UM PLANO PARA CÃES PEQUENOS COMO O SEU' : `UM PLANO PARA ${breed.toUpperCase()} COMO O SEU`;
+      document.getElementById('breedCopy').textContent = `${genericBreed} ${appetite === 'É muito enjoado' ? 'pode enjoar fácil da mesma rotina alimentar.' : 'também precisa de variedade e equilíbrio.'} O Protocolo Pet Natural organiza refeições simples para ajudar você a sair do improviso.`;
+      document.getElementById('offerHeadline').textContent = breed === 'Outra Raça Pequena'
+        ? 'COMECE HOJE UM PLANO NATURAL PARA O SEU CÃOZINHO'
+        : `COMECE HOJE UM PLANO NATURAL PARA O SEU ${breed.toUpperCase()}`;
+      document.getElementById('offerCopy').textContent = `Você leva o Protocolo Pet Natural completo, bônus e um caminho simples para começar a cuidar da alimentação do seu ${genericBreed} com mais segurança.`;
+      document.querySelector('.sticky-text').textContent = `${breed === 'Outra Raça Pequena' ? 'Protocolo Pet' : breed} • R$ 27,00`;
+    }
+
+    function releaseCtas() {
+      ctasReleased = true;
+      document.querySelectorAll('.hidden-delay').forEach(el => el.classList.remove('hidden-delay'));
+      updateStickyBar();
+    }
+
+    function observeReveals() {
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+      }, { threshold: 0.12 });
+      revealElements.forEach((element) => revealObserver.observe(element));
+    }
+
+    renderQuizStep();
+
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-question');
+      button.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach((faq) => { faq.classList.remove('active'); faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isActive) { item.classList.add('active'); button.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+
+    const stickyBar = document.getElementById('stickyBar');
+    const heroSection = document.getElementById('topo');
+    const offerSection = document.getElementById('oferta');
+    let heroVisible = true;
+    let offerVisible = false;
+
+    function updateStickyBar() {
+      if (!ctasReleased) return;
+      if (!heroVisible && !offerVisible) {
+        stickyBar.classList.add('visible');
+        stickyBar.classList.remove('hidden');
+      } else {
+        stickyBar.classList.remove('visible');
+        stickyBar.classList.add('hidden');
+      }
+    }
+
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { heroVisible = entry.isIntersecting; updateStickyBar(); });
+    }, { threshold: 0.05 });
+
+    const stickyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { offerVisible = entry.isIntersecting; updateStickyBar(); });
+    }, { threshold: 0.25 });
+
+    if (heroSection) heroObserver.observe(heroSection);
+    if (offerSection) stickyObserver.observe(offerSection);
+
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptCookies = document.getElementById('acceptCookies');
+    const manageCookies = document.getElementById('manageCookies');
+    const cookiePreferences = document.getElementById('cookiePreferences');
+    const saveCookies = document.getElementById('saveCookies');
+    const cookieConsent = localStorage.getItem('cookieConsentReceitasPet');
+    if (!cookieConsent) setTimeout(() => cookieBanner.classList.add('show'), 700);
+    acceptCookies.addEventListener('click', () => { localStorage.setItem('cookieConsentReceitasPet', JSON.stringify({ essentials: true, analytics: true, marketing: true })); cookieBanner.classList.remove('show'); });
+    manageCookies.addEventListener('click', () => cookiePreferences.classList.toggle('show'));
+    saveCookies.addEventListener('click', () => {
+      const analytics = document.getElementById('analyticsCookies').checked;
+      const marketing = document.getElementById('marketingCookies').checked;
+      localStorage.setItem('cookieConsentReceitasPet', JSON.stringify({ essentials: true, analytics, marketing }));
+      cookieBanner.classList.remove('show');
+    });
+  </script>
+
+  <script>
+  // ViewContent — dispara quando a página de vendas aparece
+  document.addEventListener('DOMContentLoaded', function() {
+    // Dispara ViewContent quando o quiz termina e a página de vendas aparece
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.target.id === 'mainContent' && 
+            !mutation.target.classList.contains('hidden')) {
+          fbq('track', 'ViewContent', {
+            content_name: '100 Receitas Naturais para Caes de Pequeno Porte',
+            content_category: 'Ebook Pet',
+            value: 27.00,
+            currency: 'BRL'
+          });
+        }
+      });
+    });
+    const mainContent = document.getElementById('mainContent');
+    if (mainContent) {
+      observer.observe(mainContent, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    // InitiateCheckout — dispara quando clica em qualquer botão de compra
+    document.querySelectorAll('a[href*="kiwify"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        fbq('track', 'InitiateCheckout', {
+          content_name: '100 Receitas Naturais para Caes de Pequeno Porte',
+          content_category: 'Ebook Pet',
+          value: 27.00,
+          currency: 'BRL',
+          num_items: 1
+        });
+      });
+    });
+  });
+  </script>
+</body>
+</html>
